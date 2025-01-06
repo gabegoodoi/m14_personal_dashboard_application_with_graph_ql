@@ -8,6 +8,8 @@ test('renders the location name when data is fetched', async () => {
     // Check for loading state
     expect(screen.getByText('Loading...')).toBeInTheDocument();
 
-    // Wait for the location name to appear
-    await waitFor(() => expect(screen.getByText('Location: New York City')).toBeInTheDocument());
+    // Use findByText to wait for the location name to appear
+    const locationText = await screen.findByText('Location: New York City');
+    expect(locationText).toBeInTheDocument();
 });
+
