@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",                       // Target ECMAScript version
+    "module": "commonjs",                  // Module system for Jest
+    "jsx": "react",                        // Support JSX in .tsx files
+    "allowImportingTsExtensions": true,  // If you're allowing '.ts' or '.tsx' extensions in imports
+    "strict": true,                        // Enable strict type checking
+    "moduleResolution": "node",           // Resolve modules from node_modules
+    "esModuleInterop": true,              // Interoperability with CommonJS modules
+    "skipLibCheck": true,                 // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing
+    "types": ["jest"],                    // Include Jest types
+    "lib": ["dom", "es6"]                 // Include DOM and ECMAScript libraries
+  },
+  "include": ["src", "tests"],            // Specify files to include
+  "exclude": ["node_modules", "dist"]    // Specify files to exclude
+}

@@ -1,8 +1,10 @@
-name: React CI
+name: CI Pipeline
 
 on:
   push:
-    branches: [main, master]
+    branches: 
+      - main
+      - feature/tests
 
 jobs:
   build:
@@ -27,4 +29,4 @@ jobs:
         echo "Working Directory: $(pwd)"
         echo "Contents of Working Directory: $(ls -1)"
         echo "Contents of node_modules: $(ls -1 node_modules)"
-
+        echo "Run Tests: $(npm test)"
