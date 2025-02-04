@@ -1,5 +1,7 @@
 # User Dashboard Application
 
+This app was created for module 14 of Coding Temple which covers API GraphQL.
+
 This app provides a comprehensive dashboard where users can manage their personal profile, posts, albums, and todos with functionality powered by GraphQL.
 
 ## Features
